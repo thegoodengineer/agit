@@ -380,7 +380,7 @@ function parseArgs(argv: string[]): { verb: string; opts: Opts } {
     else if (a === "--store") opts.store = need("--store");
     else if (a === "--otel") opts.otel = true;
     else if (a === "--atif") opts.atif = true;
-    else if (a === "--markdown" || a === "-md") opts.markdown = true;
+    else if (a === "--markdown" || a === "--md") opts.markdown = true;
     else if (a === "--help" || a === "-h") rest.unshift("help");
     else rest.push(a);
   }
